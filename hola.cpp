@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Función para calcular el MCD (Euclides)
 int MCD(int a, int b) {
     while (b != 0) {
         int temp = b;
@@ -11,7 +10,6 @@ int MCD(int a, int b) {
     return a;
 }
 
-// Función para calcular el MCM usando el MCD
 int MCM(int a, int b) {
     return (a * b) / MCD(a, b);
 }
